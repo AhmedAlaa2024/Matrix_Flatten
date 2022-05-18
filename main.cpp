@@ -74,7 +74,7 @@ int main(void)
     int test_id, y;
     for (test_id = 0; test_id < num_test; test_id++)
     {
-        cout << "Test[" << test_id + 1 << "]: ";
+        cout << "Test[" << test_id + 1 << "]: " << endl;
         tests[test_id] = ReadTensor<int>(in, n, m, p);
 
         
@@ -83,7 +83,7 @@ int main(void)
         for (y = 0; y < results[test_id].size(); y++)
             cout << results[test_id][y] << " ";
 
-        cout << endl;
+        cout << endl << endl;
     }
 
 
