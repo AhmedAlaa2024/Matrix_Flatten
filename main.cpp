@@ -24,7 +24,7 @@ vector<T> flatten(vector<vector<vector<T>>> tensor, int n, int m, int p)
     for (i = 0; i < n; i++) {
         for (j = 0; j < m; j++) {
             for (k = 0; k < p; k++) {
-                _1D_vector[i + n * (j + m * k)] = tensor[i][j][k];
+                _1D_vector[i * m * p + j * p + k] = tensor[i][j][k];
             }
         }
     }
